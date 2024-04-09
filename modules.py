@@ -10,10 +10,10 @@ home_dir = os.path.expanduser("~")
 
 
 #QBittorrent Stuff
-connection_info = dict(host='192.168.1.123',
+connection_info = dict(host='127.0.0.1',
                        port='8080',
-                       username='cryption',
-                       password='Rasengan')
+                       username='user',
+                       password='password')
 qb = qbittorrentapi.Client(**connection_info, VERIFY_WEBUI_CERTIFICATE=False)
 
 
