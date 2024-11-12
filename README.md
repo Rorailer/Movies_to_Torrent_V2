@@ -11,7 +11,7 @@ rename.py is an additional file that you may or may not need. This file cleans u
 
 This file is useful if you are using a media server which requires naming to be pretty precise.
 
-```markdown
+markdown
 
 ## Table of Contents
 
