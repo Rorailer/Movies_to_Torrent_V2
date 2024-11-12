@@ -28,16 +28,17 @@ while running == True:
             torrent_link = movies[int(user)-1]['torrents']
             torrent_link = [d for d in torrent_link if d['quality'] == '1080p']
             
-            name = movies[int(user)-1]['title_english']
-            name = name.replace(' ','_')
+            #name = movies[int(user)-1]['title_english']
+            #name = name.replace(' ','_')
             
-            path = download(torrent_link[0]['url'],name)
-
-            add_torrent(path)
+            #path = download(torrent_link[0]['url'],name)
+            torrent_link = torrent_link[0]['url]
+            
+            add_torrent(torrent_link)
             clear()
             print("Download Started")
             time.sleep(1)
-            del_trash(path)
+            #del_trash(path)
             clear()
         
         
