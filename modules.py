@@ -49,12 +49,12 @@ def download(link,name):
     subprocess.run(['curl','-o',path,link])
     return path
     
-def add_torrent(path):
+def add_torrent(torrent_link):
     try:
         qb.auth_log_in()
     except qbittorrentapi.LoginFailed as e:
         print(e)    
-    qb.torrents_add(path)
+    qb.torrents_add(urls=torrent_link)
     
     qb.auth_log_out()
     
